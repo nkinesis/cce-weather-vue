@@ -15,7 +15,7 @@
     </section>
 
     <section class="recordList" role="main">
-      <p v-for="record in weatherRecords" :key="record.id"> ID {{record.id}}, City ID: {{record.cityId}}, Date: {{record.date}}, Max temp.: {{record.maxTemp}}, Min temp.: {{record.minTemp}}</p>
+      <p v-for="record in weatherRecords" :key="record.id"> ID {{record.id}}, Condition: {{record.condition}}, City ID: {{record.cityId}}, Date: {{record.date}}, Max temp.: {{record.maxTemp}}, Min temp.: {{record.minTemp}}</p>
     </section>
   </main>
 </template>
