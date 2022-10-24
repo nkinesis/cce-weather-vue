@@ -15,6 +15,7 @@
     </section>
 
     <section class="recordList" role="main">
+      <p v-if="weatherRecords && weatherRecords.length">If you are reading this, your project is working correctly!</p>
       <p v-for="record in weatherRecords" :key="record.id"> ID {{record.id}}, Condition: {{record.condition}}, City ID: {{record.cityId}}, Date: {{record.date}}, Max temp.: {{record.maxTemp}}, Min temp.: {{record.minTemp}}</p>
     </section>
   </main>
@@ -53,6 +54,7 @@ main {
     width: 250px;
     height: 48px;
     align-items: center;
+    margin-bottom: 30px;
 
     label {
       font-weight: bold;

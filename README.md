@@ -1,4 +1,5 @@
-# cce-weather-vue
+# CCE Weather App (Vue.js)
+Sample weather app for Concordia Continuing Education. This is the front-end, made with Vue.js.
 
 ## Project setup
 ```
