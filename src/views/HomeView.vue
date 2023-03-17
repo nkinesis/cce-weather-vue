@@ -7,7 +7,7 @@
 
     <section class="recordFilter" role="search">
       <label for="city">Select your city</label>
-      <select id="city">
+      <select id="city" v-model=selectedCity>
         <option selected value="1">Montreal</option>
         <option value="2">City2</option>
         <option value="3">City3</option>
@@ -26,6 +26,7 @@ export default {
   name: 'HomeView',
   data() {
     return {
+      selectedCity: 1,
       weatherRecords: []
     }
   },
