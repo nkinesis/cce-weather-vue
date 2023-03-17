@@ -24,11 +24,11 @@ export default {
         }
     },
     methods: {
+        // This function starts by checking the form data (email field and checkbox are required). If the data is correct, it sends a POST request to the /add route in the back-end.
         sendNewsletter: function () {
-            var form = document.querySelector("form")
-            console.log("Check if information is correct before sending")
+            let form = document.querySelector("form")
             if (form.reportValidity()) {
-                var options = {
+                const options = {
                     cache: "no-cache",
                     method: "GET",
                     referrerPolicy: "no-referrer",
